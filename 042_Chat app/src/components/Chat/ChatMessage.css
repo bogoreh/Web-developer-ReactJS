@@ -1,0 +1,44 @@
+.message {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+}
+
+.message.current-user {
+  justify-content: flex-end;
+}
+
+.message-content {
+  max-width: 70%;
+  margin-left: 0.5rem;
+}
+
+.message.current-user .message-content {
+  margin-left: 0;
+  margin-right: 0.5rem;
+  align-items: flex-end;
+}
+
+.sender-name {
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.message-text {
+  background: #f0f0f0;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  display: inline-block;
+}
+
+.message.current-user .message-text {
+  background: #007bff;
+  color: white;
+}
+
+.message-time {
+  font-size: 0.7rem;
+  color: #666;
+  margin-top: 0.2rem;
+}
